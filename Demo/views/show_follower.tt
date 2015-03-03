@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Followers</title>
+</head>
+
+<body>
+<a href="..">Go Back</a>
+
+<h1>The following common followers of <% user1 %> and <% user2 %> is listed below.</h1>
+</br>
+</br>
+
+<% FOREACH foo in common_follows %>
+<% foo %>
+</br>
+<% END %>
+
+</body>
+<h5>This web app is written by King Mui using PERL and Dancer2 under the specifications for Tilt</h5>
+
+</html> 

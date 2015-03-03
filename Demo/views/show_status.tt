@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Statuses</title>
+</head>
+
+<body>
+
+<a href="..">Go Back</a>
+<h1>The following statuses of <% username %> is listed below.</h1>
+</br>
+</br>
+
+<% FOREACH foo in recent_tweets %>
+<% foo %>
+</br>
+<% END %>
+
+
+<h5>This web app is written by King Mui using PERL and Dancer2 under the specifications for Tilt</h5>
+
+</body>
+</html> 

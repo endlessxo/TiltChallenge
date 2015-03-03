@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Twitter Application for Tilt</h1>
+
+<h2>Get Status of the following Tweeter</h2>
+<form action="<% getstatus %>" method=post class=getstatus>
+    <dl>
+	<dt>Tweeter:
+	<dd><input type=text size=30 name=user1>
+	<dd><input type=submit value=Submit>    
+   </dl>
+</form>
+
+<h2>Get the common follows of the following two Tweeters</h2>
+<p>Caution.. depending on how many follows the two tweeters have, this may take longer than a few seconds.</p>
+<form action="<% getfollows %>" method=post class=getfollows>
+    <dl>
+	<dt>First Tweeter:
+	<dd><input type=text size=30 name=user2>
+    	<dt>Second Tweeter:
+	<dd><input type=text size=30 name=user3>
+	<dd><input type=submit value=Submit>  
+    </dl>
+</form>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+
+</br>
+</br>
+
+<h5>This web app is written by King Mui using PERL and Dancer2 under the specifications for Tilt</h5>
+</body>
+</html> 
